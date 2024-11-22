@@ -1,0 +1,80 @@
+@import '../../scss/variables';
+
+.pay {
+  background: $darkblue;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    flex: 7;
+    @extend %center;
+    flex-direction: column;
+
+    .btn {
+      max-width: 80vw;
+      width: 100%;
+      border-radius: 3px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 700;
+      background: $green;
+      height: 4rem;
+      border: none;
+      @extend %center;
+    }
+
+    p {
+      color: rgba($color: #fff, $alpha: 0.7);
+      font-size: 1.2rem;
+      font-style: italic;
+      padding: 2rem 3rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: $pink;
+      font-size: 2.4rem;
+      text-align: center;
+      line-height: 2.4rem;
+      margin: 0.5rem 2.6rem;
+      text-shadow: 1px 1px 0 rgba($color: #fff, $alpha: 0.1);
+    }
+
+    .when {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $green;
+      text-align: center;
+      margin: 0;
+      padding: 0.25rem 0;
+    }
+
+    .where {
+      font-size: 1.2rem;
+      color: rgba($color: #fff, $alpha: 0.6);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .counter {
+      max-width: 14rem;
+      width: 100%;
+      margin: 2rem 0;
+      border: 0.125rem solid $pink;
+      border-radius: 4px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 4rem;
+      font-size: 1.6rem;
+      color: white;
+
+      .price {
+        grid-column: 1/4;
+        @extend %center;
+        border-bottom: 1px solid $pink;
+      }
+    }
+  }
+}
